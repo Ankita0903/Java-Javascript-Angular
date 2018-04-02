@@ -1,0 +1,23 @@
+html {
+    font-family: Arial;
+    font-size: 14px;
+    color: #595959;
+	text-align: center;
+}
+
+
+/* put solution here */
+.bio {
+		display: inline-block;
+        border: 1px solid black;
+        width: 230px;
+        margin-top: -35px;
+        background-color: darkcyan;
+        border-radius: 4px;
+        height: 200px;
+        color: white;
+    }
+	
+img {
+		border-radius: 50%;
+	}	
