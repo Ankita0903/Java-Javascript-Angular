@@ -16,8 +16,8 @@
     <script type="text/javascript" src="actor.js"></script>
     <script type="text/javascript" src="cast.js"></script>
     <script type="text/javascript" src="main.js"></script>
-	<script type="text/javascript" src="instafeed.min.js"></script>
 	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 		
 	<h1>THE FLASH</h1>
 	<h4>CAST AND CREW</h4>
@@ -28,18 +28,14 @@
 
 		<div ng-init="bio=false">
 			<div ng-repeat="x in cast">
-				
-				<img ng-src="{{'images/'+x.getImage()}}" width="100" height="90" ng-mouseover="bio=true" ng-mouseleave="bio=false"></img><br>
+				<div class="div1">
+				<img ng-src="{{'images/'+x.getImage()}}" ng-mouseover="bio=true" ng-mouseleave="bio=false"></img><br>
 			    <span id="name">{{x.getName()}}</span><br>
-				<div class="bio" ng-show="bio">">{{x.getBio()}}</</div>
+				<span class="bio"><i class="fa fa-quote-left"></i>{{x.getBio()}}</span>
+				</div>
 			</div>
 		</div>
-		<div id="instafeed"></div>
-		<!-- LightWidget WIDGET --><script src="https://cdn.lightwidget.com/widgets/lightwidget.js"></script><iframe src="//lightwidget.com/widgets/b1e04e6bbf135c2f8a6e98c0994ba272.html" scrolling="no" allowtransparency="true" class="lightwidget-widget" style="width: 100%; border: 0; overflow: hidden;"></iframe>
-
-
-		
-		
+				
 		
 	</body>
 
